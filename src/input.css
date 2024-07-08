@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-neutral-200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    @apply px-8 text-green-600;
+}
+
+li a:hover {
+    @apply text-green-800;
+}
+
+input {
+    @apply text-green-600 text-xl p-3 bg-neutral-200;
+}
+
+.navbar {
+    @apply sm:py-2 md:py-4 text-xl;
+    /* Removes the points from the list in the navbar  */
+    text-decoration: none;
+}
+
+/* Makes the links stay on the left of the navbar, next to each other
+    This applies only to large screens (lg:) */
+.pagelink {
+    @apply lg:flex lg:flex-row lg:float-left;
+}
+
+/* Makes the sign in and create account links appear on the right side
+    of the navbar. This applies only to large screens (lg:) */
+.userlink {
+    @apply lg:flex lg:flex-row-reverse lg:float-right;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded text-white bg-green-600;
+}
+
+.btn:hover {
+    @apply bg-green-800;
+}
+
+.account {
+    @apply md:flex justify-center pt-12 sm:flex-auto text-xl
+}
+
+.account img {
+    @apply sm:w-max md:w-96;
+    height: auto;
+}
+
+/* Dropdown menu */
+.account select {
+    @apply w-48 text-green-600 p-4 bg-neutral-200;
+    text-align: left;
+}
+
+.hero {
+    @apply justify-center sm:pt-5 sm:flex-auto sm:text-sm md:pt-10
+           md:flex md:text-2xl;
+}
+
+.hero img {
+    @apply sm:w-max md:w-6/12; 
+    height:auto;
+}
+
+.hero p {
+    @apply lg:px-60;
+}
+
+.hero a {
+    @apply text-green-600 lg:px-60 underline;
+}
+
+.hero a:hover {
+    @apply text-green-800;
+}
+
+.message {
+    @apply text-lg text-red-700;
+}
+
+.welcome {
+    @apply text-2xl text-center;
+}
+
+.ticket {
+    @apply border-solid border-2 border-green-600 bg-green-800;
+}
+
+.ticket p {
+    @apply justify-center text-white 
+           sm:py-5 sm:flex-auto sm:text-sm 
+           md:flex md:text-2xl;
+}
+
+.info {
+    @apply sm:text-xl grid sm:grid-cols-1 md:grid-cols-2;
+}
+
+.info-card {
+    @apply p-2 border-solid border-2 rounded-lg border-green-600;
+}
+
+.terms {
+    @apply text-green-600 underline;
+}
+
+.terms:hover {
+    @apply text-green-800 underline;
+}
